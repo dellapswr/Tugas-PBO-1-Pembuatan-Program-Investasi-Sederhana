@@ -18,6 +18,7 @@ Program Java ini dirancang untuk dua jenis user dengan akses yang berbeda, yaitu
   3. Membeli Surat Berharga Negara (SBN)
   4. Melihat simulasi bunga bulanan dari SBN yang dibeli
   5. Melihat Portofolio investasinya
+
 Selain itu, program ini juga dilengkapi dengan validasi input sederhana pada bagian pilihan menu, hal ini dilakukan untuk memastikan penggua hanya dapat memilih opsi yang sesuai dengan ketentuan program.
 
 ## Anggota Kelompok
