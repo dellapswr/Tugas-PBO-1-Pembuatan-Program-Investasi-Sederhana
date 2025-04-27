@@ -24,6 +24,6 @@ Selain itu, program ini juga dilengkapi dengan validasi input sederhana pada bag
 - Ida Ayu Ratih Widya Paramitha (2405551111)
 
 ## UML
-![UML Program](images/UML PBO Tugas 1 .jpg)
+![UML Program](images/UML_PBO_Tugas_1_.jpg)
 
 
