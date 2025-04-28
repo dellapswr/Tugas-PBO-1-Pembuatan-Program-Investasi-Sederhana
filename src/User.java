@@ -1,7 +1,19 @@
-abstract class User {
-    String username, password, namaLengkap;
-    public User(String u, String p, String n) {
-        username = u; password = p; namaLengkap = n;
+public abstract class User {
+    protected String username;
+    protected String password;
+
+    public User(String username, String password) {
+        this.username = username;
+        this.password = password;
     }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
     public abstract void menu();
 }

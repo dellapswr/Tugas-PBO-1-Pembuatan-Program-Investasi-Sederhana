@@ -1,23 +1,20 @@
-class Saham {
-    String kode, namaPerusahaan;
-    double harga;
+public class Saham extends Product {
+    private double harga; // harga per lembar
 
     public Saham(String kode, String nama, double harga) {
-        this.kode = kode;
-        this.namaPerusahaan = nama;
+        super(kode, nama); // ✅ Ini dia! harus dua parameter
         this.harga = harga;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Saham)) return false;
-        Saham s = (Saham) o;
-        return kode.equals(s.kode);
+    public double getHarga() {
+        return harga;
     }
 
-    @Override
-    public int hashCode() {
-        return kode.hashCode();
+    public void setHarga(double harga) {
+        this.harga = harga;
+    }
+
+    public double getHargaPerLot() {
+        return harga * 100;
     }
 }
