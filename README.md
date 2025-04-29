@@ -50,7 +50,7 @@ Setelah melakukan login sebagai admin, maka user akan diberi intruksi kembali pa
 ![Tambah Saham](images/Tambah_Saham.jpeg)
 Untuk menambahkan saham, admin harus memasukkan kode saham, nama perusahaan, dan harga per-lembar saham. Pada saat memasukkan kode saham dan nama perusahaan, terdapat validasi agar tidak ada input kosong yang terbaca. Terdapat validasi juga pada saat memasukkan harga per-lembar saham agar harga harus lebih besar dari 0. Setelah semua input benar, maka akan ada output sukses "Saham Berhasil ditambahkan!" seperti pada gambar.
 
-## Daftar Saham Setelah ditambahkan
+## Daftar Saham
 ![Daftar SBN](images/Daftar_SBN.jpeg)
 Gambar di atas merupakan daftar beberapa saham yang sudah ditambah. Terdapat tiga saham yang ditambah yaitu BBCA, BBNI, dan ANTAM. Tampilan pada daftar saham sudah otomatis mengkalikan harga per-lembar saham dengan jumlah 1 lot saham (100 lembar), jadi tampilan harganya yaitu harga per-lembar x 100 lembar.
 
@@ -70,10 +70,6 @@ Untuk menambah SBN, admin harus memasukkan nama SBN, bunga, jangka waktu, jatuh 
 ![Hapus SBN](images/Hapus_SBN.jpeg)
 Admin bisa menghapus SBN hanya dengan memasukkan nama SBN yang akan dihapus. Terdapat validasi untuk mengecek apakah nama SBN yang akan dihapus ada atau tidak. Jika ada, maka akan ada pesan berhasil "SBN berhasil dihapus!" seperti pada gambar.
 
-## Daftar SBN Setelah dihapus
-(ss daftar sbn setelah dihapus)
-Perubahan daftar SBN yang dihapus atau ditambah juga otomatis tercatat pada daftar saham. Seperti contoh pada gambar, pada daftar saham sebelumnya menampilkan 3 SBN yang ada, yaitu SBR011, ORI025, dan SR019. Setelah menghapus saham "SR019", SBN yang baru saja dihapus tidak akan ditampilkan seperti pada gamnbar di atas. Jadi sekarang yang tersisa hanya 2 SBN, yaitu SBR011 dan ORI025.
-
 ## Menu Customer
 ![Menu Customer](images/Menu_Customers.png)
 Setelah melakukan login sebagai customer, maka user akan diberi intruksi kembali pada menu customer seperti gambar di atas. Admin akan diminta untuk memilih opsi di atas dengan menginputkan angka.
@@ -84,7 +80,7 @@ Customer dapat melihat daftar saham apa saja yang ada, lengkap dengan informasi 
 
 ## Beli Saham
 ![Beli Saham](images/Membeli_Saham.jpeg)
-Customer cukup memasukkan kode saham dan jumlah lot dari saham yang ingin dibeli. Terdapat validasi untuk memastikkan bahwa jumlah nominal yang dibeli lebih dari 0 dan validasi untuk memastikan bahwa saldo customer cukup untuk melakukan transaksi.
+Customer cukup memasukkan kode saham dan jumlah lot dari saham yang ingin dibeli. Terdapat validasi untuk memastikan bahwa jumlah nominal yang dibeli lebih dari 0 dan validasi untuk memastikan bahwa saldo customer cukup untuk melakukan transaksi.
 
 ## Lihat Daftar SBN
 ![Lihat Daftar SBN](images/Lihat_Daftar_SBN.jpeg)
@@ -96,7 +92,7 @@ Untuk membeli SBN, customer cukup memasukkan nama SBN dan besaran nominal SBN ya
 
 ## Cek Portofolio
 ![Portofolio Customer](images/Portofilio_Cust.jpeg)
-Portofolio kali ini sudah terisi semua, yang sebelumnya hanya ada portofolio saham saja kini portofolio SBN sudah terisi karena customer sudah melakukan transaksi pembelian SBN.
+Customer dapat melihat portofolio investasi yang dimiliki. Seperti apa saja saham dan SBN yang dimiliki dan berapa nilai total investasinya.
 
 ## Jual Saham
 (ss menu pilih 3. jual saham)
