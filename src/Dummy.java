@@ -14,11 +14,13 @@ public class Dummy {
         Scanner scanner = new Scanner(System.in);
         while (true) {
             System.out.println("=".repeat(40));
-            System.out.println("||       SELAMAT DATANG DI INVESTASI       ||");
+            System.out.println("||     SELAMAT DATANG DI INVESTASI    ||");
             System.out.println("=".repeat(40));
-            System.out.println("1. Login Admin");
-            System.out.println("2. Login Customer");
-            System.out.println("3. Keluar");
+            System.out.println("=".repeat(40));
+            System.out.println("|| 1. Login Admin   2. Login Customer ||");
+            System.out.println("||                                    ||");
+            System.out.println("||             3. Keluar              ||");
+            System.out.println("=".repeat(40));
             System.out.print("Pilihan: ");
             String input = scanner.nextLine();
 
@@ -42,7 +44,9 @@ public class Dummy {
             } else if (pilih == 2) {
                 loginCustomer(scanner);
             } else if (pilih == 3) {
-                System.out.println("Terima kasih Sudah Menggunakan Program!");
+                System.out.println("=".repeat(45));
+                System.out.println("|| Terima kasih Sudah Menggunakan Program! ||");
+                System.out.println("=".repeat(45));
                 break;
             } else {
                 System.out.println("Pilihan tidak tersedia!");
@@ -52,6 +56,9 @@ public class Dummy {
 
     // Method untuk login sebagai Admin
     private static void loginAdmin(Scanner scanner) {
+        System.out.println("=".repeat(41));
+        System.out.println("||    SELAMAT DATANG DI LOGIN ADMIN    ||");
+        System.out.println("=".repeat(41));
         System.out.print("Username Admin: ");
         String username = scanner.nextLine();
         if (username.trim().isEmpty()) {
@@ -78,6 +85,9 @@ public class Dummy {
 
     // Method untuk login sebagai Customer
     private static void loginCustomer(Scanner scanner) {
+        System.out.println("=".repeat(42));
+        System.out.println("||   SELAMAT DATANG DI LOGIN CUSTOMER   ||");
+        System.out.println("=".repeat(42));
         System.out.print("Username Customer: ");
         String username = scanner.nextLine();
         if (username.trim().isEmpty()) {
@@ -105,15 +115,18 @@ public class Dummy {
     // Menu Admin yang dapat diakses setelah login Admin
     private static void adminMenu(Admin admin, Scanner scanner) {
         while (true) {
-            System.out.println("\n=== MENU ADMIN ===");
-            System.out.println("1. Tambah Saham");
-            System.out.println("2. Ubah Harga Saham");
-            System.out.println("3. Lihat Daftar Saham");
-            System.out.println("4. Hapus Saham");
-            System.out.println("5. Tambah SBN");
-            System.out.println("6. Lihat Daftar SBN");
-            System.out.println("7. Hapus SBN");
-            System.out.println("0. Logout");
+            System.out.println("=".repeat(40));
+            System.out.println("||              MENU ADMIN            ||");
+            System.out.println("=".repeat(40));
+            System.out.println("||        1. Tambah Saham             ||");
+            System.out.println("||        2. Ubah Harga Saham         ||");
+            System.out.println("||        3. Lihat Daftar Saham       ||");
+            System.out.println("||        4. Hapus Saham              ||");
+            System.out.println("||        5. Tambah SBN               ||");
+            System.out.println("||        6. Lihat Daftar SBN         ||");
+            System.out.println("||        7. Hapus SBN                ||");
+            System.out.println("||        0. Logout                   ||");
+            System.out.println("=".repeat(40));
             System.out.print("Pilihan: ");
             String input = scanner.nextLine();
 
@@ -156,14 +169,17 @@ public class Dummy {
     // Menu Customer yang dapat diakses setelah login Customer
     private static void customerMenu(Customer customer, Scanner scanner) {
         while (true) {
-            System.out.println("\n=== MENU CUSTOMER ===");
-            System.out.println("1. Lihat Daftar Saham");
-            System.out.println("2. Beli Saham");
-            System.out.println("3. Jual Saham");
-            System.out.println("4. Lihat Daftar SBN");
-            System.out.println("5. Beli SBN");
-            System.out.println("6. Lihat Portofolio");
-            System.out.println("0. Logout");
+            System.out.println("=".repeat(40));
+            System.out.println("||            MENU CUSTOMER           ||");
+            System.out.println("=".repeat(40));
+            System.out.println("||       1. Lihat Daftar Saham        ||");
+            System.out.println("||       2. Beli Saham                ||");
+            System.out.println("||       3. Jual Saham                ||");
+            System.out.println("||       4. Lihat Daftar SBN          ||");
+            System.out.println("||       5. Beli SBN                  ||");
+            System.out.println("||       6. Lihat Portofolio          ||");
+            System.out.println("||       0. Logout                    ||");
+            System.out.println("=".repeat(40));
             System.out.print("Pilihan: ");
             String input = scanner.nextLine();
 
