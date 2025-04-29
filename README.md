@@ -28,8 +28,24 @@ Selain itu, program ini juga dilengkapi dengan validasi input sederhana pada bag
 - Putu Della Pradnyaswari Cipta Dewi (2405551063)
 - Ida Ayu Ratih Widya Paramitha (2405551111)
 
-## UML
-![UML Program](images/UML_PBO_Tugas_1.jpg)
+## 📄 UML
+![UML Program](images/UML_PBO1.jpg)
+
+Diagram UML ini menjelaskan struktur program berbasis OOP untuk sistem pengelolaan investasi saham & surat berharga negara (SBN). Terdapat dua jenis user: Admin dan Customer, yang mewarisi class abstract User.
+
+● Relasi utama:
+  1. Inheritance
+     User adalah parents dari Admin dan Customer
+     Product adalah parents dari Saham dan SBN
+  3. Composition
+     Customer memiliki PortofolioSaham, dan tiap PortofolioSaham mereferensikan satu
+     saham
+  5. Association
+     Dummy menyimpan semua User & Product
+  7. Dependency
+     Customer menggunakan Saham & SBN, Main menggunakan Dummy
+     
+Diagram ini menggambarkan implementasi prinsip OOP seperti inheritance, encapsulation, composition, dan dependency secara utuh.
 
 ## Penggunaan Program
 Di bawah ini merupakan penggunaan program Investasi Saham beserta hasil screenshoot. Beberapa penjelasan bagaimana kode berjalan di jelaskan di bawah.
