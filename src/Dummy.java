@@ -2,10 +2,12 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Dummy {
-    private static ArrayList<Product> products = new ArrayList<>();
-    private static ArrayList<User> users = new ArrayList<>();
+    private static ArrayList<Product> products = new ArrayList<>(); // Daftar produk yang tersedia
+    private static ArrayList<User> users = new ArrayList<>(); // Daftar pengguna (admin dan customer)
 
+    // Method untuk memulai program
     public static void startProgram() {
+        // Menambahkan Admin dan Customer awal
         users.add(new Admin("della", "admindella"));
         users.add(new Customer("dayra", "custdayra", 100_000_000));
 
@@ -34,6 +36,7 @@ public class Dummy {
                 continue;
             }
 
+            // Menangani pilihan menu
             if (pilih == 1) {
                 loginAdmin(scanner);
             } else if (pilih == 2) {
@@ -47,6 +50,7 @@ public class Dummy {
         }
     }
 
+    // Method untuk login sebagai Admin
     private static void loginAdmin(Scanner scanner) {
         System.out.print("Username Admin: ");
         String username = scanner.nextLine();
@@ -62,6 +66,7 @@ public class Dummy {
             return;
         }
 
+        // Mengecek apakah username dan password sesuai dengan yang terdaftar
         for (User user : users) {
             if (user instanceof Admin && user.getUsername().equals(username) && user.getPassword().equals(password)) {
                 adminMenu((Admin) user, scanner);
@@ -71,6 +76,7 @@ public class Dummy {
         System.out.println("Username atau password salah!");
     }
 
+    // Method untuk login sebagai Customer
     private static void loginCustomer(Scanner scanner) {
         System.out.print("Username Customer: ");
         String username = scanner.nextLine();
@@ -86,6 +92,7 @@ public class Dummy {
             return;
         }
 
+        // Mengecek apakah username dan password sesuai dengan yang terdaftar
         for (User user : users) {
             if (user instanceof Customer && user.getUsername().equals(username) && user.getPassword().equals(password)) {
                 customerMenu((Customer) user, scanner);
@@ -95,6 +102,7 @@ public class Dummy {
         System.out.println("Username atau password salah!");
     }
 
+    // Menu Admin yang dapat diakses setelah login Admin
     private static void adminMenu(Admin admin, Scanner scanner) {
         while (true) {
             System.out.println("\n=== MENU ADMIN ===");
@@ -109,7 +117,7 @@ public class Dummy {
             System.out.print("Pilihan: ");
             String input = scanner.nextLine();
 
-            
+            // Validasi input kosong
             if (input.trim().isEmpty()) {
                 System.out.println("Pilihan tidak boleh kosong. Silakan coba lagi.");
                 continue;
@@ -145,6 +153,7 @@ public class Dummy {
         }
     }
 
+    // Menu Customer yang dapat diakses setelah login Customer
     private static void customerMenu(Customer customer, Scanner scanner) {
         while (true) {
             System.out.println("\n=== MENU CUSTOMER ===");
@@ -158,7 +167,7 @@ public class Dummy {
             System.out.print("Pilihan: ");
             String input = scanner.nextLine();
 
-            
+            // Validasi input kosong
             if (input.trim().isEmpty()) {
                 System.out.println("Pilihan tidak boleh kosong. Silakan coba lagi.");
                 continue;
@@ -172,6 +181,7 @@ public class Dummy {
                 continue;
             }
 
+            
             if (pilih == 1) {
                 lihatSaham();
             } else if (pilih == 2) {
@@ -192,6 +202,7 @@ public class Dummy {
         }
     }
 
+    // Menampilkan daftar saham
     private static void lihatSaham() {
         for (User user : users) {
             if (user instanceof Admin) {
@@ -201,6 +212,7 @@ public class Dummy {
         }
     }
 
+    // Menampilkan daftar SBN
     private static void lihatSBN() {
         for (User user : users) {
             if (user instanceof Admin) {
@@ -210,6 +222,7 @@ public class Dummy {
         }
     }
 
+    // Membeli saham
     private static void beliSaham(Customer customer, Scanner scanner) {
         lihatSaham();
         System.out.print("Kode Saham: ");
@@ -236,6 +249,7 @@ public class Dummy {
         System.out.println("Saham tidak ditemukan!");
     }
 
+    // Menjual saham
     private static void jualSaham(Customer customer, Scanner scanner) {
         System.out.print("Kode Saham: ");
         String kode = scanner.nextLine();
@@ -261,6 +275,7 @@ public class Dummy {
         System.out.println("Saham tidak ditemukan!");
     }
 
+    // Membeli SBN
     private static void beliSBN(Customer customer, Scanner scanner) {
         lihatSBN();
         System.out.print("Nama SBN: ");
