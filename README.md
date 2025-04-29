@@ -1,6 +1,6 @@
 # PBO-Tugas1
 ## 📝 Pembuatan Program Investasi Sederhana
-✨ Hi!! Selamat dattang di proyek kecil kami!
+✨ Hi!! Selamat datang di proyek kecil kami!
 
 Ini merupakan suatu poyek kecil bertema Sistem Investasi saham dan Surat Bergharga Negara (SBN) yang di mana dibuat untuk menuntaskan Tugas 1 Pemrograman Berorientasi Objek (PBO).
 
