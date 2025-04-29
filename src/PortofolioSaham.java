@@ -1,12 +1,15 @@
 public class PortofolioSaham {
-    Saham saham;
-    int jumlah;
-    double hargaBeli;
+    Saham saham; // Objek saham yang dimiliki dalam portofolio
+    int jumlah;  // Jumlah saham yang dimiliki
+    double hargaBeli; // Harga beli per saham
 
+    // Konstruktor untuk membuat objek PortofolioSaham dengan validasi
     public PortofolioSaham(Saham saham, int jumlah, double hargaBeli) {
+         // Validasi: Jumlah saham harus lebih besar dari 0
         if (jumlah <= 0) {
             throw new IllegalArgumentException("Jumlah saham harus lebih besar dari 0.");
         }
+         // Validasi: Harga beli saham harus lebih besar dari 0
         if (hargaBeli <= 0) {
             throw new IllegalArgumentException("Harga beli saham harus lebih besar dari 0.");
         }
