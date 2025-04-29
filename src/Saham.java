@@ -2,7 +2,10 @@ public class Saham extends Product {
     private double harga; // harga per lembar
 
     public Saham(String kode, String nama, double harga) {
-        super(kode, nama); // ✅ Ini dia! harus dua parameter
+        super(kode, nama); // harus dua parameter
+        if (harga <= 0) {
+            throw new IllegalArgumentException("Harga saham harus lebih besar dari 0.");
+        }
         this.harga = harga;
     }
 
@@ -11,6 +14,9 @@ public class Saham extends Product {
     }
 
     public void setHarga(double harga) {
+        if (harga <= 0) {
+            throw new IllegalArgumentException("Harga saham harus lebih besar dari 0.");
+        }
         this.harga = harga;
     }
 
