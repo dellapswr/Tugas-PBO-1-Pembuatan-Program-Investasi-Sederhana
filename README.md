@@ -36,7 +36,9 @@ Di bawah ini merupakan penggunaan program Investasi Saham beserta hasil screensh
 
 ## Login Admin dan Customer
 ![Tampilan Awal](images/Tampilan_Utama.png)
+
 ![Login Admin](images/Login_Admin.png)
+
 ![Login Customer](images/Login_Customer.png)
 Setelah user memilih melakukan login sebagai role apa, user akan diminta untuk menginputkan username dan passwordnya. Jika benar maka akan mengeluarkan output seperti gambar di atas, jika salah maka akan keluar pesan kesalahan dan perintah untuk memasukkan username dan password yang benar.
 
