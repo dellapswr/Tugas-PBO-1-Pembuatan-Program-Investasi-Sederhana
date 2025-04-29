@@ -30,14 +30,14 @@ Selain itu, program ini juga dilengkapi dengan validasi input sederhana pada bag
 
 ## UML
 ![UML Program](images/UML_PBO_Tugas_1.jpg)
-![Beli SBN](images/Beli_SBN.jpeg)
+
 ## Penggunaan Program
 Di bawah ini merupakan penggunaan program Investasi Saham beserta hasil screenshoot. Beberapa penjelasan bagaimana kode berjalan di jelaskan di bawah.
 
 ## Login Admin dan Customer
-(foto tampilan awal)
-(foto login admin)
-(foto login customer)
+![Tampilan Awal](images/Tampilan_Utama.png)
+![Login Admin](images/Login_Admin.png)
+![Login Customer](images/Login_Customer.png)
 Setelah user memilih melakukan login sebagai role apa, user akan diminta untuk menginputkan username dan passwordnya. Jika benar maka akan mengeluarkan output seperti gambar di atas, jika salah maka akan keluar pesan kesalahan dan perintah untuk memasukkan username dan password yang benar.
 
 ## Menu Admin
