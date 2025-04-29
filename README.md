@@ -29,7 +29,7 @@ Selain itu, program ini juga dilengkapi dengan validasi input sederhana pada bag
 - Ida Ayu Ratih Widya Paramitha (2405551111)
 
 ## 📄 UML
-![UML](images/UML_PBO1.jpg)
+![UML](images/UML.jpg)
 
 Diagram UML ini menjelaskan struktur program berbasis OOP untuk sistem pengelolaan investasi saham & surat berharga negara (SBN). Terdapat dua jenis user: Admin dan Customer, yang mewarisi class abstract User.
 
