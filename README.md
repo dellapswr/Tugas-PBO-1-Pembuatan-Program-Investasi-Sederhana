@@ -95,8 +95,7 @@ Untuk membeli SBN, customer cukup memasukkan nama SBN dan besaran nominal SBN ya
 Customer dapat melihat portofolio investasi yang dimiliki. Seperti apa saja saham dan SBN yang dimiliki dan berapa nilai total investasinya.
 
 ## Jual Saham
-(ss menu pilih 3. jual saham)
-(ss menu masukin kode saham dan jumlah lot)
+[Jual Saham](images/Jual_Saham.jpeg)
 Untuk menjual saham, customer hanya perlu memasukkan kode saham dan jumlah lot saham yang akan dijual. Terdapat validasi untuk memastikan ada atau tidaknya kode saham yang dimasukkan dan penjualan saham harus lebih besar dari 0.
 
 ## Keluar Program
