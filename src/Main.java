@@ -1,5 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        Dummy.startProgram();
+        try {
+            Dummy.startProgram();
+        } catch (Exception e) {
+            System.out.println("Terjadi kesalahan: " + e.getMessage());
+        }
     }
 }
