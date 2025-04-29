@@ -34,15 +34,15 @@ Selain itu, program ini juga dilengkapi dengan validasi input sederhana pada bag
 Diagram UML ini menjelaskan struktur program berbasis OOP untuk sistem pengelolaan investasi saham & surat berharga negara (SBN). Terdapat dua jenis user: Admin dan Customer, yang mewarisi class abstract User.
 
 ● Relasi utama:
-  1. Inheritance
-     User adalah parents dari Admin dan Customer
+  1. Inheritance,
+     User adalah parents dari Admin dan Customer,
      Product adalah parents dari Saham dan SBN
-  3. Composition
-     Customer memiliki PortofolioSaham, dan tiap PortofolioSaham mereferensikan satu
+  3. Composition,
+     Customer memiliki PortofolioSaham dan tiap PortofolioSaham mereferensikan satu
      saham
-  5. Association
+  5. Association,
      Dummy menyimpan semua User & Product
-  7. Dependency
+  7. Dependency,
      Customer menggunakan Saham & SBN, Main menggunakan Dummy
      
 Diagram ini menggambarkan implementasi prinsip OOP seperti inheritance, encapsulation, composition, dan dependency secara utuh.
