@@ -30,7 +30,7 @@ Selain itu, program ini juga dilengkapi dengan validasi input sederhana pada bag
 
 ## UML
 ![UML Program](images/UML_PBO_Tugas_1.jpg)
-
+![Beli SBN](images/Beli_SBN.jpeg)
 ## Penggunaan Program
 Di bawah ini merupakan penggunaan program Investasi Saham beserta hasil screenshoot. Beberapa penjelasan bagaimana kode berjalan di jelaskan di bawah.
 
