@@ -21,22 +21,35 @@ public class Customer extends User {
     }
 
     public void tambahSaldo(double jumlah) {
-        saldo += jumlah;
+        if (jumlah > 0) {
+            saldo += jumlah;
+            System.out.println("Saldo berhasil ditambahkan!");
+        } else {
+            System.out.println("Jumlah saldo harus lebih besar dari 0.");
+        }
     }
 
     public void beliSaham(Saham saham, int jumlahLot) {
+        if (jumlahLot <= 0) {
+            System.out.println("Jumlah lot harus lebih besar dari 0.");
+            return;
+        }
         double totalHarga = saham.getHargaPerLot() * jumlahLot;
         if (saldo >= totalHarga) {
             saldo -= totalHarga;
             sahamDimiliki.put(saham.getKode(), sahamDimiliki.getOrDefault(saham.getKode(), 0) + jumlahLot);
-            System.out.println("✅ Pembelian saham berhasil!");
+            System.out.println("Pembelian saham berhasil!");
         } else {
-            System.out.println("❌ Saldo tidak cukup.");
+            System.out.println("Saldo tidak cukup.");
         }
     }
 
     public void jualSaham(Saham saham, int jumlahLot) {
         String kode = saham.getKode();
+        if (jumlahLot <= 0) {
+            System.out.println("Jumlah lot harus lebih besar dari 0.");
+            return;
+        }
         if (sahamDimiliki.containsKey(kode) && sahamDimiliki.get(kode) >= jumlahLot) {
             double totalHarga = saham.getHargaPerLot() * jumlahLot;
             saldo += totalHarga;
@@ -44,20 +57,24 @@ public class Customer extends User {
             if (sahamDimiliki.get(kode) == 0) {
                 sahamDimiliki.remove(kode);
             }
-            System.out.println("✅ Penjualan saham berhasil!");
+            System.out.println("Penjualan saham berhasil!");
         } else {
-            System.out.println("❌ Lot saham tidak mencukupi.");
+            System.out.println("Lot saham tidak mencukupi.");
         }
     }
 
     public void beliSBN(SuratBerhargaNegara sbn, double jumlahDana) {
+        if (jumlahDana <= 0) {
+            System.out.println("Jumlah dana harus lebih besar dari 0.");
+            return;
+        }
         if (saldo >= jumlahDana && sbn.getKuotaNasional() >= jumlahDana) {
             saldo -= jumlahDana;
             sbnDimiliki.put(sbn.getNama(), sbnDimiliki.getOrDefault(sbn.getNama(), 0.0) + jumlahDana);
             sbn.kurangiKuota(jumlahDana);
-            System.out.println("✅ Pembelian SBN berhasil!");
+            System.out.println("Pembelian SBN berhasil!");
         } else {
-            System.out.println("❌ Saldo tidak cukup atau kuota tidak mencukupi.");
+            System.out.println("Saldo tidak cukup atau kuota tidak mencukupi.");
         }
     }
 
